@@ -19,7 +19,7 @@
 	http://www.springframework.org/schema/jee 
 	http://www.springframework.org/schema/jee/spring-jee-4.0.xsd">
 
-	<jndi:jndi-lookup jndi-name="jdbc/attdnc" resource-ref="true"
+<!-- 	<jndi:jndi-lookup jndi-name="jdbc/attdnc" resource-ref="true"
 		id="dataSourceNm" />
 	
 	<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" >
@@ -36,7 +36,7 @@
 	
 	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
 	  	<constructor-arg index="0" ref="sqlSessionFactory"/>
-	</bean>
+	</bean> -->
 	
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
     </bean>

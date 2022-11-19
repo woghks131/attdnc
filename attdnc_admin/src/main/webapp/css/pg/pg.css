@@ -1,0 +1,121 @@
+@CHARSET "utf-8";
+
+.modalPop th {text-align: right;padding-right:5px}
+
+.buttonLine ul li { float: left}
+
+.fileDiv
+{
+	position:relative; 
+	left: 2px; 
+	width: 60px;
+	height:20px; 
+	overflow:hidden;
+}
+.fileHidden
+{
+	font-size: 23px; 
+	position: absolute;
+	right:0px;
+	top:0px; 
+	opacity:0; 
+	filter: alpha(opacity=0);
+	cursor: pointer;
+}
+.fileText
+{
+	float:left;
+	width:60%;
+}
+
+.btn_file{
+	background: #b6b6b6; 
+	color: #fff;
+	display: inline-block; 
+	width: 55px; 
+	height: 16px; 
+	padding-top: 4px; 
+	border: 1px solid #c9c9c9; 
+	font-weight: bold; 
+	text-align: center; 
+	font-size:11px
+}
+
+.btn_delete{
+	background: #b6b6b6;	
+	color: #fff;
+	display: inline-block; 
+	width: 55px; 
+	height: 16px; 
+	padding-top: 4px; 
+	border: 1px solid #c9c9c9; 
+	font-weight: bold; 
+	text-align: center; 
+	font-size:11px
+}
+
+.btn_modify{
+	background: #fcfcfc;	
+	display: inline-block; 
+	width: 55px; 
+	height: 16px; 
+	padding-top: 4px; 
+	border: 1px solid #c9c9c9; 
+	font-weight: bold; 
+	text-align: center; 
+	font-size:11px
+}
+
+.btn_add{
+	background: #fcfcfc;	
+	color: #3873bf;
+	display: inline-block; 
+	width: 55px; 
+	height: 16px; 
+	padding-top: 4px; 
+	border: 1px solid #739dd3; 
+	font-weight: bold; 
+	text-align: center; 
+	font-size:11px
+} 
+
+/* table */
+/* 1. box style table */
+.table_box { width:100%; text-align:center; font:inherit;  }
+.table_box thead {  line-height:22px; height:22px; background-color:#f00;}
+.table_box tfoot { font-weight:bold; background-color:#f5f7f9;}
+.table_box th {  text-align:center;padding:5px 0;line-height:1.3; margin:4px 0px; background-color:#f7f7f7; border:1px solid #ccc; font-family:Gulim; font-size:12px; font-weight:normal; color:#333;}/* 2013.06.27 수정 */
+.table_box td { padding:5px;line-height:20px; border:1px solid #ccc; color:#555; text-align:left;}/* 2013.06.27 수정 */
+.table_box tbody td.small { font-size:11px; }
+.table_box tbody td.xsmall { font-size:10px; }
+.table_box tbody td.nodata { height:20px; text-align:center; }
+.table_box tbody td.center { height:20px; text-align:center; }
+
+.textleft { text-align:left; }
+
+.ui-jqgrid .ui-pg-input{ 
+	width:25px 
+}
+
+/* 읽기 전용. */
+input.readonly, select.readonly, textarea.readonly {
+	color: #444;
+	border: 1px solid #CDCDCD;
+	background: #EFEFEF;
+}
+
+/* jqgrid font설정  */
+.ui-widget { font-family:"굴림", "돋움", "맑은 고딕", arial,helvetica,clean,sans-serif; font-size:11px; }
+/* jqgrid header padding 설정  */
+.ui-jqgrid .ui-jqgrid-htable th {padding: 5px 2px 0px 2px;}
+.ui-jqgrid tr.jqgrow td {
+
+white-space:nowrap;
+
+}
+select{
+	width:auto
+}
+input[type=text]{}
+
+.mt10 {margin-top: 10px}

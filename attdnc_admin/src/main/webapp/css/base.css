@@ -1,0 +1,90 @@
+@charset "utf-8";
+/*
+ * Copyright(c) 2013 Onlinepowers Development Team
+ * http://www.onlinepowers.com
+ */
+
+
+/* Reset */
+html {overflow-y: scroll; height: 100%;}
+body {width: 100%; height: 100%; font-family: 'Nanum Gothic'; font-size: 12px; color: #666;}
+label {cursor:pointer}
+a:link, a:visited {text-decoration: none; color: #666;}
+a:hover, a:focus, a:active {text-decoration: none; color: #666;}
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, big, cite, code,
+del, dfn, em, font, img, ins, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, 
+dl, dt, dd, ol, ul, li, input,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td 
+{margin: 0; padding: 0; border: 0;}
+
+	
+
+em, cite, address, optgroup {font-style: normal}
+kbd, samp, code {font-family: monospace}
+
+img, input, button, select, textarea {vertical-align: middle; font-family: '돋움', 'Dotum'; font-size: 12px; color: #666;}
+ul, li, ol {list-style: none}
+img, fieldset {border: 0}
+abbr, acronym {cursor: help; border-bottom: 1px dotted black}
+table {width: 100%; border-collapse: separate; *border-collapse: collapse; border-spacing: 0;}
+iframe {width: 100%; border:0; padding: 0; margin:0}
+legend {overflow: hidden; position: absolute; top: 0; left: 0}
+legend, caption {visibility: hidden; font-size: 0; width: 0; height: 0; line-height: 0}
+.skip {position:absolute; left:-5000px; width:0; height:0; font-size:0; line-height:0; overflow:hidden;}
+caption{position:static;}
+ 
+/* clear float */
+.clear {display: inline-block;}
+.clear {*zoom: 1; display: block;}
+.clear:after {content: ""; display: block; height: 0; clear: both; visibility: hidden;}
+
+.both {clear: both;}
+
+
+/*Common*/
+.show {display:block}
+.hide {display:none}
+.middle {vertical-align:middle}
+.pointer {cursor: pointer; _cursor: hand}
+
+.uppper {text-transform: uppercase;}
+.lower {text-transform: lowercase;}
+.capital {text-transform: capitalize;}
+.bgN {background: none !important;}
+
+.txt_l {text-align: left !important;;}
+.txt_c {text-align: center !important;;}
+.txt_r {text-align: right !important;;}
+
+.floL {float: left;}
+.floR {float: right;}
+.floN {float: none;}
+
+.vam {vertical-align: middle;}
+.vat {vertical-align: top;}
+.vab {vertical-align: bottom !important;}
+
+.hidden {overflow: hidden; position: absolute; width: 0; height: 0; padding: 0 !important; margin: 0; font-size: 0; line-height: 0; color: transparent;}
+
+.mt10 {margin-top: 10px}
+
+/* form */
+input[type=text], input[type=password] {width: 200px; height: 19px; margin: 0; padding-left: 3px; border: 1px solid #d1d1d1;}
+input[type=text].num1 {width: 48px;}
+input[type=text].num2 {width: 60px;}
+input[type=text].num3 {width: 65px;}
+input[type=text].right {width: 190px; padding-right: 10px; text-align: right;}
+input[type=text] {*height: 16px; *padding-top: 3px;}
+/*input[type=file] {width: 297px; margin: 0; background: #fff; border: 1px solid #d1d1d1;}*/
+input[disabled="disabled"] {background: #eee; color: #8f8f8f;}
+select {width: 205px; height: 21px; margin: 0; border: 1px solid #d1d1d1; line-height: 21px;}
+textarea {margin: 0; border: 1px solid #d1d1d1;}
+
+
