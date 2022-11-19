@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+@font-face {font-family:"Nanum"; src:url("../font/NanumGothic.eot")} 
+@font-face {font-family:"Nanum"; src:url("../font/NanumGothic.woff")} 
+
+* { margin: 0; padding: 0; }
+html, body { height: 100%; font-family: Nanum; overflow: hidden;}
+#login_contents {
+    position: absolute; top: 50%; left: 50%;    
+    width: 600px; height: 200px;                /* 폭과 높이의 값은 가급적이면 2로 나누었을 때 딱 떨어지는 값이 좋음, 쉽게 말해서 짝수 */
+    margin: -122px 0 0 -300px;                    /* 위에 지정해준 폭과 너비의 값을 음수마진값으로 재조정 */
+}
+#login_contents2 {
+    position: absolute; top: 92%; left: 50%;    
+    width: 600px; height: 50px;                
+    margin: 0px 0 0 -320px;      
+    !margin: 0px 0 0 -320px;               
+}
+.login_top{
+	background-color: #28282e;
+	min-width:100%;
+	width: 100%; height: 50%;
+}
+.login_bottom{
+	background-color: #32323a;
+	min-width:100%;
+	width: 100%; height: 50%;
+}
+.login_input {
+	font-size: 9pt;
+	font-family: Nanum;
+	font-weight: normal;
+	background: #28282e;
+	color: #f1f1f1;
+	line-height:12px;
+	padding: 4px 10px;
+	outline: none;
+	border: 1px solid #28282e;
+	width:70%;
+}
+
+.login_input2 {
+	font-size: 9pt;
+	font-family: Nanum;
+	font-weight: normal;
+	background: #28282e;
+	color: #f1f1f1;
+	line-height:12px;
+	padding: 4px 10px;
+	outline: none;
+	border: 1px solid #28282e;
+	width:70%;
+}
+
+.login_contents_input{
+	background-image:url('../images/login/title02.png');
+	background-repeat: no-repeat;
+}
+
+.login_tb_2{
+	width:300px;
+	text-align: center;
+	font-family: Nanum;
+	font-size: 9pt;
+	color: #f1f1f1;
+}
+
+.login_img{
+	cursor: pointer;
+}
+
+.login ul {
+    position: relative;
+    margin-bottom: 29px;
+}
+
+ul, li, ol {
+    list-style: none;
+}  
+.login ul {
+    position: relative;
+    margin-bottom: 29px;
+}
+/* 20210511 추가css */
+.login_area {min-height: 100%; background: #f0f0f0;}
+
+/* .login_cnt {width: 697px; margin: 0 auto; padding: 100px 124px 0 179px; background: url('/images/login/bg_login.png') no-repeat center top;} */
+.login_cnt {width: 697px; margin: 0 auto; padding: 100px 124px 0 124px; }
+.login_cnt h1 {margin-bottom: 58px; padding: 76px 108px 0;}
+
+.login {padding: 0 170px 0 180px;}
+.login h2 {padding: 0 0 8px 6px;}
+.login ul {position: relative; margin-bottom: 29px;}
+.login li {margin-top: 8px;}
+.login li [type=text] {width: 191px; height: 21px; margin-left: 6px; padding-left: 10px; font-family: 'Arial';}
+.login li [type=password] {width: 191px; height: 21px; margin-left: 6px; padding-left: 10px; font-family: 'Arial';}
+.login li.btn_login {position: absolute; right: 4px; top: 0; margin-top: 0;}
+.login .customer {margin: 38px 0 0 76px;}
+
+.login_cnt .footer {margin: 130px 18px 0; padding: 5px 0 15px; border-top: 1px solid #ddd;}
+
+img, input, button, select, textarea {
+    vertical-align: middle;
+    font-family: '돋움', 'Dotum';
+    font-size: 12px;
+    color: #666;
+}

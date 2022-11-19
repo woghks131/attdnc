@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+@font-face {font-family:"Nanum"; src:url("../../font/NanumGothic.eot")} 
+@font-face {font-family:"Nanum"; src:url("../../font/NanumGothic.woff")} 
+* { margin: 0; padding: 0; }
+#top_all{
+	height: 45px;
+	min-width: 1367px;
+	width: 100%;
+	font-family: "Nanum";
+	background-color: #28282e;
+}
+
+.td01{
+	font-size: 9pt;
+	color: #f5f5f5;
+	vertical-align: middle;
+	height: 45px;
+}
+
+.top_tb{
+	width:100%;
+	padding-left: 10px;
+}

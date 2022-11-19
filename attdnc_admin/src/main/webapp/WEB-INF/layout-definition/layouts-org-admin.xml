@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="tiles-base">
+	    
+		<put-attribute name="loginhead" value="/WEB-INF/jsp/layout/common/loginhead.jsp" />
+		<put-attribute name="head" value="/WEB-INF/jsp/layout/common/head.jsp" />
+		<put-attribute name="header" value="/WEB-INF/jsp/layout/common/header.jsp" />
+		<put-attribute name="quick" value="/WEB-INF/jsp/layout/common/quick.jsp" />
+		<put-attribute name="lnb" value="/WEB-INF/jsp/layout/common/empty.jsp" />
+		<put-attribute name="contents" value="/WEB-INF/jsp/layout/common/empty.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/layout/common/footer.jsp" />
+	</definition>
+
+	<definition name="login.tiles/*"  template="/WEB-INF/jsp/layout/layout-login.jsp" extends="tiles-base">
+		<put-attribute name="contents" value="/WEB-INF/jsp/login/{1}.jsp" />
+		<put-attribute name="tiles-name" value="login" />
+	</definition>
+
+<!-- 	<definition name="dashBoard.tiles/*"  template="/WEB-INF/jsp/layout/layout-default.jsp" extends="tiles-base">
+		<put-attribute name="lnb" value="/WEB-INF/jsp/layout/lnb/lnb-org.jsp" />
+		<put-attribute name="contents" value="/WEB-INF/jsp/dashBoard/{1}.jsp" />
+		<put-attribute name="tiles-name" value="dashBoard" />
+	</definition> -->
+	
+</tiles-definitions>
