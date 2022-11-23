@@ -14,6 +14,11 @@
 		<put-attribute name="contents" value="/WEB-INF/jsp/layout/common/empty.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/jsp/layout/common/footer.jsp" />
 	</definition>
+	
+	<definition name="test.tiles/*"  template="/WEB-INF/jsp/layout/layout-login.jsp" extends="tiles-base">
+		<put-attribute name="contents" value="/WEB-INF/jsp/test/{1}.jsp" />
+		<put-attribute name="tiles-name" value="test" />
+	</definition>
 
 	<definition name="login.tiles/*"  template="/WEB-INF/jsp/layout/layout-login.jsp" extends="tiles-base">
 		<put-attribute name="contents" value="/WEB-INF/jsp/login/{1}.jsp" />
