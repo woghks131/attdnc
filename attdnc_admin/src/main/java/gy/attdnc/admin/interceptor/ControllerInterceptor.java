@@ -31,32 +31,32 @@ public class ControllerInterceptor implements HandlerInterceptor {
 		
 		String rootPath = request.getContextPath();
 		
-		if((rootPath+"/logout.do").equals(request.getRequestURI())) {
-			setLoginInfo(request, null);
-			JSMessage.goParentAlertURL("로그아웃 처리 되었습니다.", rootPath+"/login.do", response);
-			return false;
-		}
-		
-		DataMap loginInfo = getLoginInfo(request);
-		if(loginInfo == null) {
-			//로그인, 로그인요청 URL 일 경우 패스
-			if((rootPath+"/login.do").equals(request.getRequestURI()) || (rootPath+"/reqLogin.do").equals(request.getRequestURI())
-					||(rootPath+"/org/orgInfoList.do").equals(request.getRequestURI())
-					||(rootPath+"/org/orgOpcoList.do").equals(request.getRequestURI())
-					||(rootPath+"/org/orgAdmPwdSetting.do").equals(request.getRequestURI())) {
-				return true;
-				
-			}
-			
-			JSMessage.goParentAlertURL("로그아웃 되었습니다. 다시 로그인 해주세요.", rootPath+"/login.do", response);
-			return false;
-		} else {
-			//로그인되어 있을 경우 로그인 페이지 접근 시 바로 dashboard로 이동
-			if((rootPath+"/login.do").equals(request.getRequestURI())) {
-				JSMessage.goURL(rootPath+"/indexFrame.do", response);
-				return false;
-			}
-		}
+//		if((rootPath+"/logout.do").equals(request.getRequestURI())) {
+//			setLoginInfo(request, null);
+//			JSMessage.goParentAlertURL("로그아웃 처리 되었습니다.", rootPath+"/login.do", response);
+//			return false;
+//		}
+//		
+//		DataMap loginInfo = getLoginInfo(request);
+//		if(loginInfo == null) {
+//			//로그인, 로그인요청 URL 일 경우 패스
+//			if((rootPath+"/login.do").equals(request.getRequestURI()) || (rootPath+"/reqLogin.do").equals(request.getRequestURI())
+//					||(rootPath+"/org/orgInfoList.do").equals(request.getRequestURI())
+//					||(rootPath+"/org/orgOpcoList.do").equals(request.getRequestURI())
+//					||(rootPath+"/org/orgAdmPwdSetting.do").equals(request.getRequestURI())) {
+//				return true;
+//				
+//			}
+//			
+//			JSMessage.goParentAlertURL("로그아웃 되었습니다. 다시 로그인 해주세요.", rootPath+"/login.do", response);
+//			return false;
+//		} else {
+//			//로그인되어 있을 경우 로그인 페이지 접근 시 바로 dashboard로 이동
+//			if((rootPath+"/login.do").equals(request.getRequestURI())) {
+//				JSMessage.goURL(rootPath+"/indexFrame.do", response);
+//				return false;
+//			}
+//		}
 		
 		return true;
 	}
