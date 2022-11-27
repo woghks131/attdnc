@@ -6,7 +6,7 @@
 <title>근태 관리</title>
 
 <jsp:useBean id="now" class="java.util.Date" />
-<fmt:formatDate value="${now}" pattern="yyyyMMdd" var="now" />
+<fmt:formatDate value="${now}" pattern="yyyyMMddHHmmss" var="now" />
 
 <link rel="stylesheet" type="text/css" href="/css/login.css?${now}" />
 <link rel="stylesheet" type="text/css" href="/css/common.css?${now}" />
