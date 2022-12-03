@@ -71,10 +71,7 @@
 		<div id="login_contents">
 			<table class="login_tb">
 				<tr align="center">
-				 <td><img src="${pageContext.request.contextPath}/images/login/title01.png" /></td>
-				</tr>
-				<tr>
-					<td><img src="${pageContext.request.contextPath}/images/login/title02.png" /></td>
+				 <td><img src="/images/login/title01.png" /></td>
 				</tr>
 				<tr align="center">
 					<td align="center">
@@ -96,7 +93,7 @@
 						<table class="login_tb_2" >
 							<tr>
 							<td>
-								<img id="btnReg" class="login_img" src="${pageContext.request.contextPath}/images/login/btn_login.png"/>
+								<img id="btnReg" class="login_img" src="/images/login/btn_login.png"/>
 							</td>
 							</tr>
 						</table>
@@ -106,7 +103,7 @@
 				<td>
 				<br/>
 					<p style="font-size:8pt; color: white;" align="center">
-						※ 본 시스템은 [NeonBox] 서비스 회원에 한하여 사용하실 수 있습니다.<br/>※ 불법적인 접근 및 사용 시 관련 법규에 의해 처벌될 수 있습니다.
+						※ 본 시스템은 [근태관리] 서비스 회원에 한하여 사용하실 수 있습니다.<br/>※ 불법적인 접근 및 사용 시 관련 법규에 의해 처벌될 수 있습니다.
 					</p>
 					<p style="font-size:8pt;  color: white;" align="center">
 						<br/><br/>연락처 : 02-864-3010<br/>
@@ -114,9 +111,6 @@
 						궁금하신 사항을 문의해주세요.
 					</p>
 				</td>  
-				</tr>
-				<tr>
-					<td><img src="${pageContext.request.contextPath}/images/login/title03.png" /></td>
 				</tr>
 			</table> 
 				
