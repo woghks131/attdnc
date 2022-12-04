@@ -5,23 +5,17 @@
 * { margin: 0; padding: 0; }
 html, body { height: 100%; font-family: Nanum; overflow: hidden;}
 #login_contents {
-    position: absolute; top: 50%; left: 50%;    
+    position: absolute; top: 50%; left: 50%;
     width: 600px; height: 200px;                /* 폭과 높이의 값은 가급적이면 2로 나누었을 때 딱 떨어지는 값이 좋음, 쉽게 말해서 짝수 */
-    margin: -122px 0 0 -300px;                    /* 위에 지정해준 폭과 너비의 값을 음수마진값으로 재조정 */
-}
-#login_contents2 {
-    position: absolute; top: 92%; left: 50%;    
-    width: 600px; height: 50px;                
-    margin: 0px 0 0 -320px;      
-    !margin: 0px 0 0 -320px;               
+    margin: -122px 0 0 -300px;                   /* 위에 지정해준 폭과 너비의 값을 음수마진값으로 재조정 */
 }
 .login_top{
-	background-color: #28282e;
+	background-color: #292b43;
 	min-width:100%;
 	width: 100%; height: 50%;
 }
 .login_bottom{
-	background-color: #32323a;
+	background-color: #515462;
 	min-width:100%;
 	width: 100%; height: 50%;
 }
@@ -38,24 +32,6 @@ html, body { height: 100%; font-family: Nanum; overflow: hidden;}
 	width:70%;
 }
 
-.login_input2 {
-	font-size: 9pt;
-	font-family: Nanum;
-	font-weight: normal;
-	background: #28282e;
-	color: #f1f1f1;
-	line-height:12px;
-	padding: 4px 10px;
-	outline: none;
-	border: 1px solid #28282e;
-	width:70%;
-}
-
-.login_contents_input{
-	background-image:url('../images/login/title02.png');
-	background-repeat: no-repeat;
-}
-
 .login_tb_2{
 	width:300px;
 	text-align: center;
@@ -64,13 +40,23 @@ html, body { height: 100%; font-family: Nanum; overflow: hidden;}
 	color: #f1f1f1;
 }
 
-.login_img{
+.btn_login {
+	background: #f0f1f1;
+	color: #727272;
+	width: 60px;
+	font-family: Nanum;
+	font-weight: bold;
 	cursor: pointer;
 }
 
-.login ul {
-    position: relative;
-    margin-bottom: 29px;
+.link {
+	width:250px;
+	color: #000000;
+	font-family: Nanum;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: center;
+	cursor: pointer;
 }
 
 ul, li, ol {
