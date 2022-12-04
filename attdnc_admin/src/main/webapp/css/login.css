@@ -41,8 +41,8 @@ html, body { height: 100%; font-family: Nanum; overflow: hidden;}
 }
 
 .btn_login {
-	background: #f0f1f1;
-	color: #727272;
+	background: #878799;
+	color: #ffffff;
 	width: 60px;
 	font-family: Nanum;
 	font-weight: bold;
