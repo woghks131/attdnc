@@ -3,23 +3,32 @@
 @font-face {font-family:"Nanum"; src:url("../font/NanumGothic.woff")} 
 
 * { margin: 0; padding: 0; }
-html, body { height: 100%; font-family: Nanum; overflow: hidden;}
-#login_contents {
-    position: absolute; top: 50%; left: 50%;
-    width: 600px; height: 200px;                /* 폭과 높이의 값은 가급적이면 2로 나누었을 때 딱 떨어지는 값이 좋음, 쉽게 말해서 짝수 */
-    margin: -122px 0 0 -300px;                   /* 위에 지정해준 폭과 너비의 값을 음수마진값으로 재조정 */
+html, body { height: auto; font-family: Nanum; overflow: scroll; -ms-overflow-style: none;}
+
+::-webkit-scrollbar {
+	display: none;
 }
-.login_top{
+
+.bg_top{
 	background-color: #292b43;
 	min-width:100%;
-	width: 100%; height: 50%;
+	width: 100%; height: 30%;
 }
-.login_bottom{
+.bg_bottom{
+	-ms-overflow-style:none;
 	background-color: #6f7185;
 	min-width:100%;
-	width: 100%; height: 50%;
+	width: 100%; height: 150%;
 }
-.login_input {
+
+#register_contents {
+	-ms-overflow-style:none;
+    position: absolute; top: 30%; left: 50%;
+    width: 600px; height: 130%;                /* 폭과 높이의 값은 가급적이면 2로 나누었을 때 딱 떨어지는 값이 좋음, 쉽게 말해서 짝수 */
+    margin: -122px 0 0 -300px;                   /* 위에 지정해준 폭과 너비의 값을 음수마진값으로 재조정 */
+}
+
+.register_input {
 	font-size: 9pt;
 	font-family: Nanum;
 	font-weight: normal;
@@ -30,6 +39,83 @@ html, body { height: 100%; font-family: Nanum; overflow: hidden;}
 	outline: none;
 	border: 1px solid #28282e;
 	width:70%;
+}
+
+.register_label {
+	text-align: right;
+	font-size: 11pt;
+	font-family: Nanum;
+	font-weight: bold;
+	color: #000000;
+	line-height:12px;
+	padding: 4px 10px;
+	outline: none;
+}
+
+.nessesary:before {
+	content: "*";
+	color: #a2251e;
+	display: inline;
+	height: 20px;
+	vertical-align: super;
+}
+
+.text_lamp {
+	text-align: right;
+	vertical-align: text-bottom;
+	font-size: 6pt;
+	color: #a2251e;
+	height: 20px;
+}
+
+.chkId {
+	text-align: center;
+	font-size: 9pt;
+	background: #878799;
+	color: #000000;
+	width: 60px;
+	font-family: Nanum;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.selectable_open {
+	text-align: center;
+	font-size: 20px;
+	color: #000000;
+	font-family: Nanum;
+	font-weight: bold;
+	cursor: pointer;
+	height: 70px;
+}
+
+.sel:after {
+	content: " [선택]";
+	color: #000000;
+}
+
+.btn_chk, .btn_send {
+	text-align: center;
+	font-size: 10pt;
+	background: #878799;
+	color: #000000;
+	font-family: Nanum;
+	font-weight: normal;
+	cursor: pointer;
+	height: 25px;
+}
+
+.email {
+	font-size: 9pt;
+	font-family: Nanum;
+	font-weight: normal;
+	background: #28282e;
+	color: #f1f1f1;
+	line-height:12px;
+	padding: 4px 10px;
+	outline: none;
+	border: 1px solid #28282e;
+	width: 80%;
 }
 
 .login_tb_2{

@@ -8,7 +8,7 @@
 <jsp:useBean id="now" class="java.util.Date"/>
 <%-- <fmt:formatDate value="${now}" pattern="yyyyMMddHHmmss" var="now"/>  --%>
 
-<link rel="stylesheet" type="text/css" href="/css/login.css?20221127" />
+<link rel="stylesheet" type="text/css" href="/css/login.css?20221211" />
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <link rel="stylesheet" type="text/css" href="/css/import.css" />
 <script type="text/javascript" src="/js/jquery/jquery.js"></script>
