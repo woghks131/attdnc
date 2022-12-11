@@ -93,7 +93,7 @@
 			<table class="link">
 				<tr>
 				<td class="link">
-					<a href="#" target="_blank" class="link id">아이디 찾기</a>x
+					<a href="#" target="_blank" class="link id">아이디 찾기</a>
 				</td>
 				<td class="link">
 					<a href="#" target="_blank" class="link pw">비밀번호 찾기</a>
