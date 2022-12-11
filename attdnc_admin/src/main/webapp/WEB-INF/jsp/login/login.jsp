@@ -65,7 +65,7 @@
 	
 	    </script>
 	</head>  
-	<body style=" position :relative;">
+	<body style="position :relative;">
 		<div class="login_top"></div> 
 		<div class="login_bottom"></div>
 		<div id="login_contents" align="center">
@@ -85,11 +85,6 @@
 								<td style="text-align: left;">비밀번호</td>
 								<td style="float: left;" colspan="2"><input class="login_input" onkeyup="enterkey()" type="password" id="passwd" name="passwd"></input></td>
 							</tr>
-							<tr align="center">  
-								<td align="center">
-									<br/> 
-								</td>
-							</tr>
 						</table>
 					</td>
 				</tr>
@@ -97,14 +92,14 @@
 			<br/>
 			<table class="link">
 				<tr>
-				<td class="link id">
-					아이디 찾기
+				<td class="link">
+					<a href="#" target="_blank" class="link id">아이디 찾기</a>x
 				</td>
-				<td class="link pw">
-					비밀번호 찾기
+				<td class="link">
+					<a href="#" target="_blank" class="link pw">비밀번호 찾기</a>
 				</td>
-				<td class="link reg">
-					회원가입
+				<td class="link">
+					<a href="#" target="_blank" class="link reg">회원가입</a>
 				</td>
 				</tr>
 			</table>
